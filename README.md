@@ -32,7 +32,7 @@ This will download a .tgz file containing the relevant files. To unzip this file
 
 tar zxvf cora.tgz
 
-Finally, you must specify the path to the dataset in the config.json file inside `src/`
+Finally, you must specify the path to the dataset in the `config.json` file inside the `src` directory.
 
 ## Part 3: Implementation
 

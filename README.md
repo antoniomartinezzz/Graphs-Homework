@@ -47,7 +47,7 @@ Based on the Cora dataset class, **explain in your own words the difference betw
 
 Also, include in your report an **explanation of the message passing algorithm that is implemented in the forward function in the `model.py` file. How are the messages being aggregated?  How many layers does the model initially have?**
 
-To be able to run the code, you have to complete some missing lines of code in [layers.py](src/layers.py) file. In this file, you will find the different aggregator architectures used in the original paper. You need to complete the mean aggregator and the pooling aggregator classes. Please only modify the code where you are asked to do so (#TODO).
+To be able to run the code, you have to complete some missing lines in [layers.py](src/layers.py) file. In this file, you will find the different aggregator architectures used in the [GraphSAGE paper](http://papers.nips.cc/paper/6703-inductive-representation-learning-on-large-graphs). You need to complete the mean aggregator and the pooling aggregator classes. Please only modify the code where you are asked to do so (#TODO).
 
 Once the missing lines are completed, you are ready for the experimentation part!
 

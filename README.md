@@ -67,7 +67,7 @@ You must run **4 experiments**, one for each of the available methods.  Then, ch
 
 a. To have the complete points, you need to **attach a table with all the experiments to your report.** 
 
-b. In addition, discuss how each of the hyperparameters and aggregating arquitectures that you modified affects the performance of the network.** **Are your results as expected?**
+b. In addition, discuss how each of the hyperparameters and aggregating arquitectures that you modified affect the performance of the network.** **Are your results as expected?**
 
 ## Part 4: Layer experimentation (1 point)
 

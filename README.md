@@ -4,6 +4,11 @@ In this homework, you will explore a classification task using graphs, through a
 
 ## Part 1: Installation
 
+Check that PyTorch>=1.11.0 is installed: `python -c "import torch; print(torch.__version__)"`
+
+If not, install PyTorch following the [provider](https://pytorch.org) instructions or using: 
+
+``` $ conda install pytorch torchvision torchaudio pytorch-cuda=11.7 -c pytorch -c nvidia ```
 
 ## Part 2: Dataset exploration (1 point)
 

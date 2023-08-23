@@ -1,8 +1,10 @@
-# Graphs-Homework
+# Graphs - Advanced Machine Learning 2021-II
 
-In this homework, you will explore a classification task using graphs, through an implementation of GraphSAGE, from [Inductive Representation Learning on Large Graphs](http://papers.nips.cc/paper/6703-inductive-representation-learning-on-large-graphs), on the Cora Dataset
+As we saw in the class, graphs have a wide range of applications for many different tasks where data can be modeled as a network.
+In this homework, you will explore a classification task using graphs, through an implementation of GraphSAGE, from [Inductive Representation Learning on Large Graphs](http://papers.nips.cc/paper/6703-inductive-representation-learning-on-large-graphs), on the Cora Dataset.
 
-## Part 1: Installation
+
+## Installation and requirements
 
 Check that PyTorch>=1.11.0 is installed: `python -c "import torch; print(torch.__version__)"`
 
@@ -10,7 +12,7 @@ If not, install PyTorch following the [provider](https://pytorch.org) instructio
 
 ``` $ conda install pytorch torchvision torchaudio pytorch-cuda=11.7 -c pytorch -c nvidia ```
 
-## Part 2: Dataset exploration (1 point)
+## Part 1: Dataset exploration (1 point)
 
 In this homework, we will use the Cora dataset, a citation network consisting of 2708 scientific publications.
 
@@ -39,19 +41,19 @@ tar zxvf cora.tgz
 
 Finally, you must specify the path to the dataset in the `config.json` file inside the `src` directory.
 
-## Part 3: Implementation (1 point)
+## Part 2: Implementation (1 point)
 
 In this part, you will be implementing the GraphSAGE model for the defined task on the Cora dataset. For this purpose, you should initially dive into the code to get a general understanding of the model. The Cora dataset class is defined in `datasets/node_classification.py` and the model implementation in the rest of the `src/` files. 
 
-Based on the Cora dataset class, **explain in your own words the difference between training a transductive and inductive model. What would you expect to give better results?**
+a. Based on the Cora dataset class, **explain in your own words the difference between training a transductive and inductive model. What would you expect to give better results?**
 
-Also, include in your report an **explanation of the message passing algorithm that is implemented in the forward function in the `model.py` file. How are the messages being aggregated?  How many layers does the model initially have?**
+b. Also, include in your report an **explanation of the message passing algorithm that is implemented in the forward function in the `model.py` file and the `layers.py` file. How are the messages being aggregated?  How many layers does the model initially have?** Hint: Look to indentify how each of the message passing algorithm steps for a GraphSAGE layer (message calculation for each neighbor, aggregation and activation) is implemented and where. 
 
 To be able to run the code, you have to complete some missing lines in [layers.py](src/layers.py) file. In this file, you will find the different aggregator architectures used in the [GraphSAGE paper](http://papers.nips.cc/paper/6703-inductive-representation-learning-on-large-graphs). You need to complete the mean aggregator and the pooling aggregator classes. Please only modify the code where you are asked to do so (#TODO).
 
 Once the missing lines are completed, you are ready for the experimentation part!
 
-## Part 4: Experimentation (2 points)
+## Part 3: Experimentation (2 points)
 
 To run the model with the default parameters, go to `src` and use the command: 
 
@@ -59,17 +61,29 @@ To run the model with the default parameters, go to `src` and use the command:
 python main.py
 ```
 
-First, experiment with the aggregation arquitecture. You must run **4 experiments**, one for each of the available methods. **Are your results as expected?** Then, choose other tunable hyperparameters that you wish to explore and run at leat **6 extra experiments**. In the `src` directory, edit the `config.json` file to specify arguments and flags.
+First, experiment with the aggregation arquitecture. 
 
-To have the complete points, you need to **attach a table with all the experiments to your report. In addition, you should discuss how each of the hyperparameters that you modify affects the performance of the network.**
+You must run **4 experiments**, one for each of the available methods.  Then, choose other tunable hyperparameters that you wish to explore and run at leat **6 extra experiments**. In the `src` directory, edit the `config.json` file to specify arguments and flags.
 
-## Part 5: Layer experimentation (1 point)
+a. To have the complete points, you need to **attach a table with all the experiments to your report.** 
+
+b. In addition, discuss how each of the hyperparameters and aggregating arquitectures that you modified affects the performance of the network.** **Are your results as expected?**
+
+## Part 4: Layer experimentation (1 point)
 
 Finally, you should choose the best model found in Part 4 and experiment with the number of layers in the model. You must perform at least 2 extra experiments. In the report **attach the table with the results and discuss them**.
 
-# Report
+# Deadline and report
 
 Please upload to your repository a PDF file named Lastname_Graphs.pdf.
 
 Deadline: Sep 11, 2023, 23:59
+
+# References
+
+* [Inductive Representation Learning on Large Graphs](http://papers.nips.cc/paper/6703-inductive-representation-learning-on-large-graphs), Hamilton et al., NeurIPS 2017.
+
+* This implementation is based on https://github.com/raunakkmr/GraphSAGE
+
+
 

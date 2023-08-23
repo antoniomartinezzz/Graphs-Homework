@@ -63,7 +63,7 @@ First, experiment with the aggregation arquitecture. You must run **4 experiment
 
 To have the complete points, you need to **attach a table with all the experiments to your report. In addition, you should discuss how each of the hyperparameters that you modify affects the performance of the network.**
 
-## Part 5: Layer experimentation
+## Part 5: Layer experimentation (1 point)
 
 Finally, you should choose the best model found in Part 4 and experiment with the number of layers in the model. You must perform at least 2 extra experiments. In the report **attach the table with the results and discuss them**.
 

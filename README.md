@@ -1,4 +1,4 @@
-# Graphs - Advanced Machine Learning 2021-II
+# Graphs - Advanced Machine Learning 2023-II
 
 As we saw in the class, graphs have a wide range of applications for many different tasks where data can be modeled as a network.
 In this homework, you will explore a classification task using graphs, through an implementation of GraphSAGE, from [Inductive Representation Learning on Large Graphs](http://papers.nips.cc/paper/6703-inductive-representation-learning-on-large-graphs), on the Cora Dataset.

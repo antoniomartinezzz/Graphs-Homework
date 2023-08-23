@@ -5,7 +5,7 @@ In this homework, you will explore a classification task using graphs, through a
 ## Part 1: Installation
 
 
-## Part 2: Dataset exploration
+## Part 2: Dataset exploration (1 point)
 
 In this homework, we will use the Cora dataset, a citation network consisting of 2708 scientific publications.
 
@@ -19,7 +19,7 @@ Give a brief statistical description of the dataset and answer the following que
 
 **What is the task for this dataset? What metric is used to evaluate this task?**
 
-Then, choose two datasets from the [Open Graph Benchmark](https://ogb.stanford.edu/) datasets that are used for a different task than the Cora dataset and give a brief description. 
+Then, choose two datasets from the [Open Graph Benchmark](https://ogb.stanford.edu/) datasets that are used for a different task than the Cora dataset and **give a brief description.** 
 
 
 ### Installation:
@@ -34,19 +34,19 @@ tar zxvf cora.tgz
 
 Finally, you must specify the path to the dataset in the `config.json` file inside the `src` directory.
 
-## Part 3: Implementation
+## Part 3: Implementation (1 point)
 
-In this part, you will be implementing the GraphSAGE model for the defined task on the Cora dataset. For this purpose, you should initially dive into the code (all files) to get a general understanding of the model. The Cora dataset class is defined in the datasets/node_classification.py and the model implementation in the `src/` files. 
+In this part, you will be implementing the GraphSAGE model for the defined task on the Cora dataset. For this purpose, you should initially dive into the code (all files) to get a general understanding of the model. The Cora dataset class is defined in `datasets/node_classification.py` and the model implementation in the rest of the `src/` files. 
 
-Based on the Cora dataset class, explain in your own words the difference between training a transductive and inductive model. What would you expect to give better results? 
+Based on the Cora dataset class, **explain in your own words the difference between training a transductive and inductive model. What would you expect to give better results?**
 
-Also, include in your report an explanation of the message passing algorithm that is implemented on the forward function in the model.py file. How are the messages being aggregated?  How many layers does the model initially have? 
+Also, include in your report an **explanation of the message passing algorithm that is implemented in the forward function in the `model.py` file. How are the messages being aggregated?  How many layers does the model initially have?**
 
-To be able to run the code, you have to complete some missing lines of code in layers.py file. In this file, you will find the different aggregator architectures used in the original paper. You need to complete the mean aggregator and the pooling aggregator classes. Please only modify the code where you are asked to do so (#TODO).
+To be able to run the code, you have to complete some missing lines of code in [layers.py](src/layers.py) file. In this file, you will find the different aggregator architectures used in the original paper. You need to complete the mean aggregator and the pooling aggregator classes. Please only modify the code where you are asked to do so (#TODO).
 
 Once the missing lines are completed, you are ready for the experimentation part!
 
-## Part 4: Experimentation
+## Part 4: Experimentation (2 points)
 
 To run the model with the default parameters, go to `src` and use the command: 
 
@@ -54,15 +54,17 @@ To run the model with the default parameters, go to `src` and use the command:
 python main.py
 ```
 
-First, experiment with the aggregation arquitecture. You must run **4 experiments**, one for each of the available methods. Are your results as expected? Then, choose other tunable hyperparameters that you wish to explore and run at leat **6 extra experiments**. In the `src` directory, edit the `config.json` file to specify arguments and flags.
+First, experiment with the aggregation arquitecture. You must run **4 experiments**, one for each of the available methods. **Are your results as expected?** Then, choose other tunable hyperparameters that you wish to explore and run at leat **6 extra experiments**. In the `src` directory, edit the `config.json` file to specify arguments and flags.
 
-To have the complete points, you need to attach a table with all the experiments to your report. In addition, you should discuss how each of the hyperparameters that you modify affects the performance of the network.
+To have the complete points, you need to **attach a table with all the experiments to your report. In addition, you should discuss how each of the hyperparameters that you modify affects the performance of the network.**
 
-## Part 5: 
+## Part 5: Layer experimentation
 
-Finally, you should choose the best model found in Part 4 and experiment with the number of layers in the model. You must perform at least 2 extra experiments. In the report attach the table with the results and discuss them.
+Finally, you should choose the best model found in Part 4 and experiment with the number of layers in the model. You must perform at least 2 extra experiments. In the report **attach the table with the results and discuss them**
 
 # Report
 
+Please upload to your repository a PDF file named Lastname_Graphs.pdf.
 
+Deadline: Sep 11, 2023, 23:59
 

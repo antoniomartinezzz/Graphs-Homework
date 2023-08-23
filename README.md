@@ -65,7 +65,7 @@ To have the complete points, you need to **attach a table with all the experimen
 
 ## Part 5: Layer experimentation
 
-Finally, you should choose the best model found in Part 4 and experiment with the number of layers in the model. You must perform at least 2 extra experiments. In the report **attach the table with the results and discuss them**
+Finally, you should choose the best model found in Part 4 and experiment with the number of layers in the model. You must perform at least 2 extra experiments. In the report **attach the table with the results and discuss them**.
 
 # Report
 

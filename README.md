@@ -54,7 +54,7 @@ To run the model with the default parameters, go to `src` and use the command:
 python main.py
 ```
 
-First, experiment with the aggregation arquitecture. You must run **4 experiments**, one for each of the available methods. Are your results as expected? Then, choose other tunable hyperparameters that you wish to explore and run at leat **6 extra experiments**. Specify the hyperparameters values directly in [config.json].
+First, experiment with the aggregation arquitecture. You must run **4 experiments**, one for each of the available methods. Are your results as expected? Then, choose other tunable hyperparameters that you wish to explore and run at leat **6 extra experiments**. In the `src` directory, edit the `config.json` file to specify arguments and flags.
 
 To have the complete points, you need to attach a table with all the experiments to your report. In addition, you should discuss how each of the hyperparameters that you modify affects the performance of the network.
 

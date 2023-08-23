@@ -1,0 +1,19 @@
+{
+    "print_every" : 10,
+    "dataset" : "Cora",
+    "dataset_path" : "/home/amartinez/GraphSAGE/cora",
+    "mode" : "train",
+    "task" : "node_classification",
+    "agg_class" : "MeanAggregator",
+    "cuda" : "True",
+    "hidden_dims" : [16],
+    "dropout" : 0.3,
+    "num_samples" : -1,
+    "batch_size" : 16,
+    "epochs" : 100,
+    "lr" : 1e-1,
+    "weight_decay" : 5e-4,
+    "self_loop" : "True",
+    "normalize_adj" : "False",
+    "transductive" : "False"
+}
